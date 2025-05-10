@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Muhammad Khalid - Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right top, #e0eafc, #cfdef3);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2d2d2d;
+    }
+
+    .card {
+      max-width: 900px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-img {
+      flex: 1 1 200px;
+      max-width: 200px;
+      border-radius: 12px;
+      border: 3px solid #fff;
+    }
+
+    .text {
+      flex: 2 1 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text p {
+      font-size: 1.2rem;
+      color: #004aad;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      margin: 40px 0 10px;
+      color: #003a7f;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    audio, video {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    .links {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #004aad;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .links a:hover {
+      background: #002c70;
+    }
+
+    @media (max-width: 700px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .text {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="profile.JPG" alt="Muhammad Khalid" class="profile-img" />
+    <div class="text">
+      <p>Hello! I'm <strong>Muhammad Khalid Sanusi</strong>, an aspiring professional programmer passionate about building a bright future through technology.</p>
+    </div>
+  </div>
+
+  <h3>About</h3>
+  <p>This audio will also tell you who I am. Just follow me:</p>
+  <audio controls>
+    <source src="aud.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <p>This video will additionally clarify who I am. Just follow me:</p>
+  <video controls>
+    <source src="vid.mp4" type="video/mp4" />
+    Your browser does not support the video element.
+  </video>
+
+  <p>You can also reach out to me through</p>
+  <div class="links">
+    <a href="https://www.facebook.com/share/16PiLn3suA/" target="_blank">Facebook</a>
+    <a href="https://wa.me/qr/IXYS2IXZ2C2LP1" target="_blank">WhatsApp</a>
+  </div>
+
+</body>
+</html>
